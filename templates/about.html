@@ -33,12 +33,12 @@
                                     <div class="header-info-left">
                                         <ul>     
                                             <li><i class="fas fa-phone-alt"></i> +10 (78) 564 4568</li>
-                                            <li>info.90@chariter.com</li>
+                                            <li>info.hrssi.ca</li>
                                         </ul>
                                     </div>
                                     <div class="header-info-right">
                                         <ul class="header-social">    
-                                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                            <li><a href="https://www.facebook.com/profile.php?id=100071000042396"><i class="fab fa-facebook"></i></a></li>
                                             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                                             <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                             <li> <a href="#"><i class="fab fa-instagram"></i></a></li>
@@ -55,7 +55,7 @@
                             <!-- Logo -->
                             <div class="col-xl-2 col-lg-2">
                                 <div class="logo">
-                                    <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                                    <a href="/"><img src="{{ url_for('static', filename='img/logo/logo.png')}}" alt=""></a>
                                 </div>
                             </div>
                             <div class="col-xl-10 col-lg-10">
@@ -63,9 +63,9 @@
                                 <div class="main-menu f-right d-none d-lg-block">
                                     <nav> 
                                         <ul id="navigation">                                                                                                                                     
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="cases.html">Cases</a></li>
-                                            <li><a href="about.html">About</a></li>
+                                            <li><a href="/">Home</a></li>
+                                            <li><a href="cases">Cases</a></li>
+                                            <li><a href="about">About</a></li>
                                             <li><a href="blog.html">Blog</a>
                                                 <ul class="submenu">
                                                     <li><a href="blog.html">Blog</a></li>
@@ -115,7 +115,7 @@
                 <div class="row align-items-center justify-content-between">
                     <div class="col-xl-6 col-lg-6 col-md-10">
                         <div class="support-location-img">
-                            <img src="assets/img/gallery/about.jpg" alt="">
+                            <img src="{{ url_for('static', filename='img/gallery/about.jpg')}}" alt="">
                         </div>
                     </div>
                     <div class="col-xl-5 col-lg-6 col-md-10">
@@ -137,7 +137,7 @@
         </div>
         <!-- About Area End-->
         <!-- Count Down Start -->
-        <div class="count-down-area pt-25 section-img-bg2" data-background="assets/img/gallery/section-bg1.jpg">
+        <div class="count-down-area pt-25 section-img-bg2" data-background="{{ url_for('static', filename='img/gallery/section-bg1.jpg')}}">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-12 col-md-12">
@@ -146,7 +146,7 @@
                                 <div class="col-lg-3 col-md-6 col-sm-6">
                                     <div class="single-counter d-flex align-items-center">
                                         <div class="counter-img">
-                                            <img src="assets/img/icon/count-icon1.svg" alt="">
+                                            <img src="{{ url_for('static', filename='img/icon/count-icon1.svg')}}" alt="">
                                         </div>
                                         <div class="captions">
                                             <span class="counter">35</span>
@@ -158,7 +158,7 @@
                                 <div class="col-lg-3 col-md-6 col-sm-6">
                                     <div class="single-counter d-flex align-items-center">
                                         <div class="counter-img">
-                                            <img src="assets/img/icon/count-icon2.svg" alt="">
+                                            <img src="{{ url_for('static', filename='img/icon/count-icon2.svg')}}" alt="">
                                         </div>
                                         <div class="captions">
                                             <span class="counter">12</span>
@@ -170,7 +170,7 @@
                                 <div class="col-lg-3 col-md-6 col-sm-6">
                                     <div class="single-counter d-flex align-items-center">
                                         <div class="counter-img">
-                                            <img src="assets/img/icon/count-icon3.svg" alt="">
+                                            <img src="{{ url_for('static', filename='img/icon/count-icon3.svg')}}" alt="">
                                         </div>
                                         <div class="captions">
                                             <span class="counter">200</span>
@@ -182,7 +182,7 @@
                                 <div class="col-lg-3 col-md-6 col-sm-6">
                                     <div class="single-counter d-flex align-items-center">
                                         <div class="counter-img">
-                                            <img src="assets/img/icon/count-icon4.svg" alt="">
+                                            <img src="{{ url_for('static', filename='img/icon/count-icon4.svg')}}" alt="">
                                         </div>
                                         <div class="captions">
                                             <span class="counter">1200</span>
@@ -213,7 +213,7 @@
                     <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6">
                         <div class="single-services text-center mb-30">
                             <div class="services-icon">
-                                <img src="assets/img/icon/services1.svg" alt="">
+                                <img src="{{ url_for('static', filename='img/icon/services1.svg')}}" alt="">
                             </div>
                             <div class="services-cap">
                                 <h5><a href="#">Pure Food & Water</a></h5>
@@ -224,7 +224,7 @@
                     <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6">
                         <div class="single-services text-center mb-30">
                             <div class="services-icon">
-                                <img src="assets/img/icon/services2.svg" alt="">
+                                <img src="{{ url_for('static', filename='img/icon/services2.svg')}}" alt="">
                             </div>
                             <div class="services-cap">
                                 <h5><a href="#">Health & Medicine</a></h5>
@@ -235,7 +235,7 @@
                     <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6">
                         <div class="single-services text-center mb-30">
                             <div class="services-icon">
-                                <img src="assets/img/icon/services1.svg" alt="">
+                                <img src="{{ url_for('static', filename='img/icon/services1.svg')}}" alt="">
                             </div>
                             <div class="services-cap">
                                 <h5><a href="#">Education</a></h5>
@@ -248,7 +248,7 @@
         </div>
         <!-- Our Services End -->
         <!-- Emergency care start -->
-        <div class="emargency-care section-img-bg2" data-background="assets/img/gallery/section-bg2.jpg">
+        <div class="emargency-care section-img-bg2" data-background="{{ url_for('static', filename='img/gallery/section-bg2.jpg')}}">
             <div class="container">
                 <div class="row justify-content-end">
                     <div class="col-xl-6 col-lg-8 col-md-9 col-sm-12">
@@ -280,12 +280,12 @@
                     </div>
                     <div class="offset-xl-1 col-xl-4 col-lg-4 col-md-7 col-sm-7">
                         <div class="joning-img">
-                            <img src="assets/img/gallery/joining1.jpg" alt="" class="w-100">
+                            <img src="{{ url_for('static', filename='img/gallery/joining1.jpg')}}" alt="" class="w-100">
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-5 col-sm-5">
                         <div class="joning-img">
-                            <img src="assets/img/gallery/joining2.jpg" alt="" class="w-100">
+                            <img src="{{ url_for('static', filename='img/gallery/joining2.jpg')}}" alt="" class="w-100">
                         </div>
                     </div>
                 </div>
@@ -303,7 +303,7 @@
                                 <div class="single-footer-caption mb-20">
                                     <!-- logo -->
                                     <div class="footer-logo mb-35">
-                                        <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+                                        <a href="index.html"><img src="{{ url_for('static', filename='img/logo/logo2_footer.png')}}" alt=""></a>
                                     </div>
                                     <div class="footer-tittle">
                                         <div class="footer-pera">
@@ -399,7 +399,6 @@
     <!-- JS here -->
     <!-- Jquery, Popper, Bootstrap -->
     <script src="{{ url_for('static', filename='js/vendor/modernizr-3.5.0.min.js')}}"></script>
-    <!-- Jquery, Popper, Bootstrap -->
 <!--    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>-->
     <script src="{{ url_for('static', filename='js/vendor/jquery-1.12.4.min.js')}}"></script>
     <script src="{{ url_for('static', filename= 'js/popper.min.js')}}"></script>

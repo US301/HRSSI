@@ -6,12 +6,9 @@
     <title>Charity | Template</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='img/icon/favicon.png')}}">
-
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/icon/favicon.png">
 
 	<!-- CSS here -->
-
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css')}}">
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/slicknav.css')}}">
@@ -21,7 +18,7 @@
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/fontawesome-all.min.css')}}">
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/themify-icons.css')}}">
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/slick.css')}}">
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/nic-select.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/nice-select.css')}}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
 </head>
 <body>
@@ -58,7 +55,7 @@
                             <!-- Logo -->
                             <div class="col-xl-2 col-lg-2">
                                 <div class="logo">
-                                    <a href="/"><img src=" {{ url_for('static', filename = 'img/logo/logo.png')}}" alt=""></a>
+                                    <a href="/"><img src="{{ url_for('static', filename='img/logo/logo.png')}}" alt=""></a>
                                 </div>
                             </div>
                             <div class="col-xl-10 col-lg-10">
@@ -97,57 +94,21 @@
         </div>
     </header>
     <main>
-        <!-- slider Area Start-->
-        <div class="slider-area position-relative">
-            <div class="slider-active dot-style">
-                <!-- Single Slider -->
-                <div class="single-slider hero-overly slider-height slider-bg1 d-flex align-items-center">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xxl-6 col-xl-7 col-lg-7 col-md-8 col-sm-10">
-                                <div class="hero-caption">
-                                    <h1 data-animation="fadeInUp" data-delay=".2s">Support a causes you care about</h1>
-                                    <P data-animation="fadeInUp" data-delay=".4s">Sedac odio aliquet, fringilla odio eget, tincidunt nunc. Duis aliquet 
-                                        pulvinar ante tempor etiam lacus eros</P>
-                                    <a href="#" class="btn hero-btn"  data-animation="fadeInUp" data-delay=".8s">Active Cases</a>
-                                </div>
+        <!-- Hero area Start-->
+        <div class="slider-area">
+            <div class="slider-height2 slider-bg4 hero-overly d-flex align-items-center">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-5 col-lg-6 col-md-6">
+                            <div class="hero-caption hero-caption2">
+                                <h2>Active Cases</h2>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Single Slider -->
-                <div class="single-slider hero-overly01  slider-height slider-bg2 d-flex align-items-center">
-                    <div class="container">
-                        <div class="row justify-content-end">
-                            <div class="col-xxl-6 col-xl-7 col-lg-7 col-md-8 col-sm-10">
-                                <div class="hero-caption">
-                                    <h1 data-animation="fadeInUp" data-delay=".2s">Support a causes you care about</h1>
-                                    <P data-animation="fadeInUp" data-delay=".4s">Sedac odio aliquet, fringilla odio eget, tincidunt nunc. Duis aliquet 
-                                        pulvinar ante tempor etiam lacus eros</P>
-                                    <a href="#" class="btn hero-btn"  data-animation="fadeInUp" data-delay=".8s">Active Cases</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single Slider -->
-                <div class="single-slider hero-overly slider-height slider-bg3 d-flex align-items-center">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xxl-6 col-xl-7 col-lg-7 col-md-8 col-sm-10">
-                                <div class="hero-caption">
-                                    <h1 data-animation="fadeInUp" data-delay=".2s">Support a causes you care about</h1>
-                                    <P data-animation="fadeInUp" data-delay=".4s">Sedac odio aliquet, fringilla odio eget, tincidunt nunc. Duis aliquet 
-                                        pulvinar ante tempor etiam lacus eros</P>
-                                    <a href="#" class="btn hero-btn"  data-animation="fadeInUp" data-delay=".8s">Active Cases</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </div> 
         </div>
-        <!-- slider Area End-->
+        <!--  Hero area End -->
         <!-- Services Start 01 -->
         <div class="services-area1 section-padding">
             <div class="container">
@@ -159,13 +120,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="services1-active">
+                <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <!-- Single -->
                         <div class="properties pb-30">
                             <div class="properties-card">
                                 <div class="properties-img">
-                                    <a href="#"><img src="{{ url_for('static', filename ='img/gallery/services-img1.jpg')}}" alt=""></a>
+                                    <a href="#"><img src="{{ url_for('static', filename='img/gallery/services-img1.jpg')}}" alt=""></a>
                                     <!-- Progress Bar -->
                                     <div class="single-skill">
                                         <div class="bar-progress">
@@ -206,7 +167,7 @@
                         <div class="properties pb-30">
                             <div class="properties-card">
                                 <div class="properties-img">
-                                    <a href="#"><img src="{{ url_for('static', filename = 'img/gallery/services-img2.jpg')}}" alt=""></a>
+                                    <a href="#"><img src="{{ url_for('static', filename='img/gallery/services-img2.jpg')}}" alt=""></a>
                                     <!-- Progress Bar -->
                                     <div class="single-skill">
                                         <div class="bar-progress">
@@ -247,7 +208,7 @@
                         <div class="properties pb-30">
                             <div class="properties-card">
                                 <div class="properties-img">
-                                    <a href="#"><img src="{{ url_for('static', filename = 'img/gallery/services-img3.jpg')}}" alt=""></a>
+                                    <a href="#"><img src="{{ url_for('static', filename='img/gallery/services-img3.jpg')}}" alt=""></a>
                                     <!-- Progress Bar -->
                                     <div class="single-skill">
                                         <div class="bar-progress">
@@ -288,7 +249,7 @@
                         <div class="properties pb-30">
                             <div class="properties-card">
                                 <div class="properties-img">
-                                    <a href="#"><img src="{{ url_for('static', filename= 'img/gallery/services-img2.jpg')}}" alt=""></a>
+                                    <a href="#"><img src="{{ url_for('static', filename='img/gallery/services-img4.jpg')}}" alt=""></a>
                                     <!-- Progress Bar -->
                                     <div class="single-skill">
                                         <div class="bar-progress">
@@ -324,148 +285,92 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <!-- Single -->
+                        <div class="properties pb-30">
+                            <div class="properties-card">
+                                <div class="properties-img">
+                                    <a href="#"><img src="{{ url_for('static', filename='img/gallery/services-img5.jpg')}}" alt=""></a>
+                                    <!-- Progress Bar -->
+                                    <div class="single-skill">
+                                        <div class="bar-progress">
+                                            <div id="bar5" class="barfiller">
+                                                <div class="tipWrap">
+                                                    <span class="tip"></span>
+                                                </div>
+                                                <span class="fill" data-percentage="65"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- / progress -->
+                                </div>
+                                <div class="wrap-wrapper">
+                                    <div class="properties-caption">
+                                        <h3><a href="#">Sponsor a child</a></h3>
+                                        <p>Sedac odio aliquet, fringilla odio eget, tincidunt nunc duis aliquet pulvinar ante.</p>
+                                    </div>
+                                    <div class="properties-footer d-flex justify-content-between align-items-center">
+                                        <div class="class-day">
+                                            <a href="#" class="btn">Donate</a>
+                                        </div>
+                                        <div class="class-day">
+                                            <span class="color-font2">$67,845</span>
+                                            <p>Goal</p>
+                                        </div>
+                                        <div class="class-day">
+                                            <span class="color-font1">$48,845</span>
+                                            <p>Raised</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <!-- Single -->
+                        <div class="properties pb-30">
+                            <div class="properties-card">
+                                <div class="properties-img">
+                                    <a href="#"><img src="{{ url_for('static', filename='img/gallery/services-img6.jpg')}}" alt=""></a>
+                                    <!-- Progress Bar -->
+                                    <div class="single-skill">
+                                        <div class="bar-progress">
+                                            <div id="bar6" class="barfiller">
+                                                <div class="tipWrap">
+                                                    <span class="tip"></span>
+                                                </div>
+                                                <span class="fill" data-percentage="65"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- / progress -->
+                                </div>
+                                <div class="wrap-wrapper">
+                                    <div class="properties-caption">
+                                        <h3><a href="#">Help senior citizens</a></h3>
+                                        <p>Sedac odio aliquet, fringilla odio eget, tincidunt nunc duis aliquet pulvinar ante.</p>
+                                    </div>
+                                    <div class="properties-footer d-flex justify-content-between align-items-center">
+                                        <div class="class-day">
+                                            <a href="#" class="btn">Donate</a>
+                                        </div>
+                                        <div class="class-day">
+                                            <span class="color-font2">$67,845</span>
+                                            <p>Goal</p>
+                                        </div>
+                                        <div class="class-day">
+                                            <span class="color-font1">$48,845</span>
+                                            <p>Raised</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div> 
             </div>
         </div>
         <!-- Services End -->
-        <!-- About -->
-        <div class="support-company-area section-padding">
-            <div class="container">
-                <div class="row align-items-center justify-content-between">
-                    <div class="col-xl-6 col-lg-6 col-md-10">
-                        <div class="support-location-img">
-                            <img src="{{ url_for('static', filename='img/gallery/about.jpg')}}" alt="">
-                        </div>
-                    </div>
-                    <div class="col-xl-5 col-lg-6 col-md-10">
-                        <div class="right-caption">
-                            <!-- Section Tittle -->
-                            <div class="section-tittle">
-                                <h2>Who we are?</h2>
-                            </div>
-                            <div class="support-caption">
-                                <p class="mb-10">Sedac odio aliquet, fringilla odio eget, tincidunt nunc. Duis aliquet 
-                                    pulvinar ante tempor etiam lacus eros</p>
-                                <p class="pera-top">The legal definition of a charitable organization (and of charity) varies between countries and in some instances regions of the country. The regulation, the tax treatment, and the way in which charity law affects charitable organizations also vary.</p>
-                                <a href="about.html" class="btn about-btn">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- About Area End-->
-        <!-- Count Down Start -->
-        <div class="count-down-area pt-25 section-img-bg2" data-background="{{ url_for('static', filename= 'img/gallery/section-bg1.jpg')}}">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-12 col-md-12">
-                        <div class="count-down-wrapper" >
-                            <div class="row justify-content-between">
-                                <div class="col-lg-3 col-md-6 col-sm-6">
-                                    <div class="single-counter d-flex align-items-center">
-                                        <div class="counter-img">
-                                            <img src="{{ url_for('static', filename= 'img/icon/count-icon1.svg')}}" alt="">
-                                        </div>
-                                        <div class="captions">
-                                            <span class="counter">35</span>
-                                            <span class="plus">+</span>
-                                            <p class="color-green">Active Cases</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-sm-6">
-                                    <div class="single-counter d-flex align-items-center">
-                                        <div class="counter-img">
-                                            <img src="{{ url_for('static', filename = 'img/icon/count-icon2.svg')}}" alt="">
-                                        </div>
-                                        <div class="captions">
-                                            <span class="counter">12</span>
-                                            <span class="plus">m</span>
-                                            <p class="color-green">People Joined</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-sm-6">
-                                    <div class="single-counter d-flex align-items-center">
-                                        <div class="counter-img">
-                                            <img src="{{ url_for('static', filename='img/icon/count-icon3.svg')}}" alt="">
-                                        </div>
-                                        <div class="captions">
-                                            <span class="counter">200</span>
-                                            <span class="plus">m</span>
-                                            <p class="color-green">Cases every Year</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-sm-6">
-                                    <div class="single-counter d-flex align-items-center">
-                                        <div class="counter-img">
-                                            <img src="{{ url_for('static', filename='img/icon/count-icon4.svg')}}" alt="">
-                                        </div>
-                                        <div class="captions">
-                                            <span class="counter">1200</span>
-                                            <p class="color-green">People get help from us</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Count Down End -->
-        <!-- Our Services Start -->
-        <div class="our-services section-padding position-relative">
-            <div class="container">
-                <div class="row justify-content-sm-center">
-                    <div class="col-xl-7 col-lg-8 col-md-11">
-                        <!-- Section Tittle -->
-                        <div class="section-tittle text-center mb-70">
-                            <h2>We serve for peoples</h2>
-                            <p>Sedac odio aliquet, fringilla odio eget, tincidunt  nunc duis aliquet <br>pulvinar ante.</p>
-                        </div> 
-                    </div>
-                </div>
-                <div class="row justify-content-between">
-                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services text-center mb-30">
-                            <div class="services-icon">
-                                <img src="{{ url_for('static', filename = 'img/icon/services1.svg')}}" alt="">
-                            </div>
-                            <div class="services-cap">
-                                <h5><a href="#">Pure Food & Water</a></h5>
-                                <p>Odio aliquet, fringilla odio eget, tincidunt nunc duis aliquet pulvinar ante employees and organizations to support.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services text-center mb-30">
-                            <div class="services-icon">
-                                <img src="{{ url_for('static', filename='img/icon/services2.svg')}}" alt="">
-                            </div>
-                            <div class="services-cap">
-                                <h5><a href="#">Health & Medicine</a></h5>
-                                <p>Odio aliquet, fringilla odio eget, tincidunt nunc duis aliquet pulvinar ante employees and organizations to support.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services text-center mb-30">
-                            <div class="services-icon">
-                                <img src="{{ url_for('static', filename='img/icon/services1.svg')}}" alt="">
-                            </div>
-                            <div class="services-cap">
-                                <h5><a href="#">Education</a></h5>
-                                <p>Odio aliquet, fringilla odio eget, tincidunt nunc duis aliquet pulvinar ante employees and organizations to support.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Our Services End -->
         <!-- Emergency care start -->
         <div class="emargency-care section-img-bg2" data-background="{{ url_for('static', filename='img/gallery/section-bg2.jpg')}}">
             <div class="container">
@@ -484,33 +389,6 @@
             </div>
         </div>
         <!-- Emergency care End -->
-        <!-- Join with Us Start-->
-        <div class="join-us-area section-padding">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-xl-4 col-lg-5 col-md-10">
-                        <div class="joing-details">
-                            <div class="section-tittle">
-                                <h2>Join with Us</h2>
-                            </div>
-                            <p>The legal definition of a charitable organization (and of charity) varies between countries and in some instances regions of the country. The regulation, the tax treatment, and the way.</p>
-                            <a href="about.html" class="btn about-btn">Join Now</a>
-                        </div>
-                    </div>
-                    <div class="offset-xl-1 col-xl-4 col-lg-4 col-md-7 col-sm-7">
-                        <div class="joning-img">
-                            <img src="{{ url_for('static', filename='img/gallery/joining1.jpg')}}" alt="" class="w-100">
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-5 col-sm-5">
-                        <div class="joning-img">
-                            <img src="{{ url_for('static', filename='img/gallery/joining2.jpg')}}" alt="" class="w-100">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Join with Us End-->
     </main>
     <footer>
         <div class="footer-wrapper">
@@ -617,7 +495,6 @@
 
     <!-- JS here -->
     <script src="{{ url_for('static', filename='js/vendor/modernizr-3.5.0.min.js')}}"></script>
-    <!-- Jquery, Popper, Bootstrap -->
 <!--    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>-->
     <script src="{{ url_for('static', filename='js/vendor/jquery-1.12.4.min.js')}}"></script>
     <script src="{{ url_for('static', filename= 'js/popper.min.js')}}"></script>
@@ -643,7 +520,7 @@
     <script src="{{ url_for('static', filename = 'js/mail-script.js')}}"></script>
     <script src="{{ url_for('static', filename = 'js/jquery.ajaxchimp.min.js')}}"></script>
 
-    <!--  Plugins, main-Jquery -->	
+    <!--  Plugins, main-Jquery -->
     <script src="{{ url_for('static', filename = 'js/plugins.js')}}"></script>
     <script src="{{ url_for('static', filename = 'js/main.js')}}"></script>
     </body>
