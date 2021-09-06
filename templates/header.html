@@ -1,0 +1,93 @@
+{% block header %}
+
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>HRSSI | HOPE</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='img/icon/hrssi_alone.png')}}">
+
+
+	<!-- CSS here -->
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/slicknav.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/progressbar_barfiller.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.min.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/fontawesome-all.min.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/themify-icons.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/slick.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/nic-select.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+<header>
+        <div class="header-area">
+            <div class="main-header ">
+                <div class="header-top d-none d-sm-block">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="d-flex justify-content-between flex-wrap align-items-center">
+                                    <div class="header-info-left">
+                                        <ul>
+                                            <li><i class="fas fa-phone-alt"></i> 647-669-7474</li>
+                                            <li>info.hrssi.ca</li>
+                                        </ul>
+                                    </div>
+                                    <div class="header-info-right">
+                                        <ul class="header-social">
+                                            <li><a href="https://www.facebook.com/profile.php?id=100071000042396"><i class="fab fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                            <li> <a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-bottom  header-sticky">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <!-- Logo -->
+                            <div class="col-xl-2 col-lg-2">
+                                <div class="logo">
+                                    <a href="/"><img src="{{ url_for('static', filename = 'img/logo/hrsi_preview.png')}}" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-10 col-lg-10">
+                                <!-- Main-menu -->
+                                <div class="main-menu f-right d-none d-lg-block">
+                                    <nav>
+                                        <ul id="navigation">
+                                            <li><a href="/">Home</a></li>
+                                            <li><a href="about">About</a></li>
+                                            <li><a href="contact">Contact</a></li>
+                                            <li>
+                                                <div class="header-right-btn f-right  ml-15">
+                                                    <a href="donation" class="header-btn">Donate Now</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <!-- Mobile Menu -->
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+{% endblock %}

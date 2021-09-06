@@ -1,145 +1,20 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Charity | Template</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='img/icon/favicon.png')}}">
+{% include "header.html" %}
+{% block content %}
 
-
-	<!-- CSS here -->
-
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css')}}">
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/slicknav.css')}}">
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/progressbar_barfiller.css')}}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.min.css')}}">
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css')}}">
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/fontawesome-all.min.css')}}">
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/themify-icons.css')}}">
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/slick.css')}}">
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/nic-select.css')}}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
-</head>
-<body>
-    <header>
-        <div class="header-area">
-            <div class="main-header ">
-                <div class="header-top d-none d-sm-block">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-xl-12">
-                                <div class="d-flex justify-content-between flex-wrap align-items-center">
-                                    <div class="header-info-left">
-                                        <ul>     
-                                            <li><i class="fas fa-phone-alt"></i> +10 (78) 564 4568</li>
-                                            <li>info.hrssi.ca</li>
-                                        </ul>
-                                    </div>
-                                    <div class="header-info-right">
-                                        <ul class="header-social">    
-                                            <li><a href="https://www.facebook.com/profile.php?id=100071000042396"><i class="fab fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                            <li> <a href="#"><i class="fab fa-instagram"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="header-bottom  header-sticky">
-                    <div class="container-fluid">
-                        <div class="row align-items-center">
-                            <!-- Logo -->
-                            <div class="col-xl-2 col-lg-2">
-                                <div class="logo">
-                                    <a href="/"><img src=" {{ url_for('static', filename = 'img/logo/logo.png')}}" alt=""></a>
-                                </div>
-                            </div>
-                            <div class="col-xl-10 col-lg-10">
-                                <!-- Main-menu -->
-                                <div class="main-menu f-right d-none d-lg-block">
-                                    <nav> 
-                                        <ul id="navigation">                                                                                                                                     
-                                            <li><a href="/">Home</a></li>
-                                            <li><a href="cases">Cases</a></li>
-                                            <li><a href="about">About</a></li>
-                                            <li><a href="blog.html">Blog</a>
-                                                <ul class="submenu">
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="blog_details.html">Blog Details</a></li>
-                                                    <li><a href="elements.html">Elements</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                            <li>
-                                                <div class="header-right-btn f-right  ml-15">
-                                                    <a href="login.html" class="header-btn">Donate Now</a>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div> 
-                            <!-- Mobile Menu -->
-                            <div class="col-12">
-                                <div class="mobile_menu d-block d-lg-none"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
     <main>
         <!-- slider Area Start-->
         <div class="slider-area position-relative">
             <div class="slider-active dot-style">
                 <!-- Single Slider -->
-                <div class="single-slider hero-overly slider-height slider-bg1 d-flex align-items-center">
+                <div style="background-image: url('static/img/hero/thesix.jpg')" class="single-slider hero-overly slider-height d-flex align-items-center">
                     <div class="container">
                         <div class="row">
                             <div class="col-xxl-6 col-xl-7 col-lg-7 col-md-8 col-sm-10">
                                 <div class="hero-caption">
-                                    <h1 data-animation="fadeInUp" data-delay=".2s">Support a causes you care about</h1>
-                                    <P data-animation="fadeInUp" data-delay=".4s">Sedac odio aliquet, fringilla odio eget, tincidunt nunc. Duis aliquet 
-                                        pulvinar ante tempor etiam lacus eros</P>
-                                    <a href="#" class="btn hero-btn"  data-animation="fadeInUp" data-delay=".8s">Active Cases</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single Slider -->
-                <div class="single-slider hero-overly01  slider-height slider-bg2 d-flex align-items-center">
-                    <div class="container">
-                        <div class="row justify-content-end">
-                            <div class="col-xxl-6 col-xl-7 col-lg-7 col-md-8 col-sm-10">
-                                <div class="hero-caption">
-                                    <h1 data-animation="fadeInUp" data-delay=".2s">Support a causes you care about</h1>
-                                    <P data-animation="fadeInUp" data-delay=".4s">Sedac odio aliquet, fringilla odio eget, tincidunt nunc. Duis aliquet 
-                                        pulvinar ante tempor etiam lacus eros</P>
-                                    <a href="#" class="btn hero-btn"  data-animation="fadeInUp" data-delay=".8s">Active Cases</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single Slider -->
-                <div class="single-slider hero-overly slider-height slider-bg3 d-flex align-items-center">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xxl-6 col-xl-7 col-lg-7 col-md-8 col-sm-10">
-                                <div class="hero-caption">
-                                    <h1 data-animation="fadeInUp" data-delay=".2s">Support a causes you care about</h1>
-                                    <P data-animation="fadeInUp" data-delay=".4s">Sedac odio aliquet, fringilla odio eget, tincidunt nunc. Duis aliquet 
-                                        pulvinar ante tempor etiam lacus eros</P>
-                                    <a href="#" class="btn hero-btn"  data-animation="fadeInUp" data-delay=".8s">Active Cases</a>
+                                    <h1 data-animation="fadeInUp" data-delay=".2s">Support a cause you care about</h1>
+                                    <P data-animation="fadeInUp" data-delay=".4s"> Every year, thousands of Eritreans flee Eritrea, Sudan, Yemen, Ethiopia and the Middle East for a better life.
+                                        Help make that dream a reality.</P>
+                                    <a href="/about" class="btn hero-btn"  data-animation="fadeInUp" data-delay=".8s">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -147,207 +22,26 @@
                 </div>
             </div>
         </div>
-        <!-- slider Area End-->
-        <!-- Services Start 01 -->
-        <div class="services-area1 section-padding">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-md-10 col-sm-11">
-                        <!-- Section Tittle -->
-                        <div class="section-tittle text-center mb-60">
-                            <h2>Causes we are serving</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="services1-active">
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <!-- Single -->
-                        <div class="properties pb-30">
-                            <div class="properties-card">
-                                <div class="properties-img">
-                                    <a href="#"><img src="{{ url_for('static', filename ='img/gallery/services-img1.jpg')}}" alt=""></a>
-                                    <!-- Progress Bar -->
-                                    <div class="single-skill">
-                                        <div class="bar-progress">
-                                            <div id="bar1" class="barfiller">
-                                                <div class="tipWrap">
-                                                    <span class="tip"></span>
-                                                </div>
-                                                <span class="fill" data-percentage="65"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- / progress -->
-                                </div>
-                                <div class="wrap-wrapper">
-                                    <div class="properties-caption">
-                                        <h3><a href="#">Help the ecosystems</a></h3>
-                                        <p>Sedac odio aliquet, fringilla odio eget, tincidunt nunc duis aliquet pulvinar ante.</p>
-                                    </div>
-                                    <div class="properties-footer d-flex justify-content-between align-items-center">
-                                        <div class="class-day">
-                                            <a href="#" class="btn">Donate</a>
-                                        </div>
-                                        <div class="class-day">
-                                            <span class="color-font2">$67,845</span>
-                                            <p>Goal</p>
-                                        </div>
-                                        <div class="class-day">
-                                            <span class="color-font1">$48,845</span>
-                                            <p>Raised</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <!-- Single -->
-                        <div class="properties pb-30">
-                            <div class="properties-card">
-                                <div class="properties-img">
-                                    <a href="#"><img src="{{ url_for('static', filename = 'img/gallery/services-img2.jpg')}}" alt=""></a>
-                                    <!-- Progress Bar -->
-                                    <div class="single-skill">
-                                        <div class="bar-progress">
-                                            <div id="bar2" class="barfiller">
-                                                <div class="tipWrap">
-                                                    <span class="tip"></span>
-                                                </div>
-                                                <span class="fill" data-percentage="65"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- / progress -->
-                                </div>
-                                <div class="wrap-wrapper">
-                                    <div class="properties-caption">
-                                        <h3><a href="#">Sponsor a child</a></h3>
-                                        <p>Sedac odio aliquet, fringilla odio eget, tincidunt nunc duis aliquet pulvinar ante.</p>
-                                    </div>
-                                    <div class="properties-footer d-flex justify-content-between align-items-center">
-                                        <div class="class-day">
-                                            <a href="#" class="btn">Donate</a>
-                                        </div>
-                                        <div class="class-day">
-                                            <span class="color-font2">$67,845</span>
-                                            <p>Goal</p>
-                                        </div>
-                                        <div class="class-day">
-                                            <span class="color-font1">$48,845</span>
-                                            <p>Raised</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <!-- Single -->
-                        <div class="properties pb-30">
-                            <div class="properties-card">
-                                <div class="properties-img">
-                                    <a href="#"><img src="{{ url_for('static', filename = 'img/gallery/services-img3.jpg')}}" alt=""></a>
-                                    <!-- Progress Bar -->
-                                    <div class="single-skill">
-                                        <div class="bar-progress">
-                                            <div id="bar3" class="barfiller">
-                                                <div class="tipWrap">
-                                                    <span class="tip"></span>
-                                                </div>
-                                                <span class="fill" data-percentage="65"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- / progress -->
-                                </div>
-                                <div class="wrap-wrapper">
-                                    <div class="properties-caption">
-                                        <h3><a href="#">Help senior citizens</a></h3>
-                                        <p>Sedac odio aliquet, fringilla odio eget, tincidunt nunc duis aliquet pulvinar ante.</p>
-                                    </div>
-                                    <div class="properties-footer d-flex justify-content-between align-items-center">
-                                        <div class="class-day">
-                                            <a href="#" class="btn">Donate</a>
-                                        </div>
-                                        <div class="class-day">
-                                            <span class="color-font2">$67,845</span>
-                                            <p>Goal</p>
-                                        </div>
-                                        <div class="class-day">
-                                            <span class="color-font1">$48,845</span>
-                                            <p>Raised</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <!-- Single -->
-                        <div class="properties pb-30">
-                            <div class="properties-card">
-                                <div class="properties-img">
-                                    <a href="#"><img src="{{ url_for('static', filename= 'img/gallery/services-img2.jpg')}}" alt=""></a>
-                                    <!-- Progress Bar -->
-                                    <div class="single-skill">
-                                        <div class="bar-progress">
-                                            <div id="bar4" class="barfiller">
-                                                <div class="tipWrap">
-                                                    <span class="tip"></span>
-                                                </div>
-                                                <span class="fill" data-percentage="65"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- / progress -->
-                                </div>
-                                <div class="wrap-wrapper">
-                                    <div class="properties-caption">
-                                        <h3><a href="#">Help the ecosystems</a></h3>
-                                        <p>Sedac odio aliquet, fringilla odio eget, tincidunt nunc duis aliquet pulvinar ante.</p>
-                                    </div>
-                                    <div class="properties-footer d-flex justify-content-between align-items-center">
-                                        <div class="class-day">
-                                            <a href="#" class="btn">Donate</a>
-                                        </div>
-                                        <div class="class-day">
-                                            <span class="color-font2">$67,845</span>
-                                            <p>Goal</p>
-                                        </div>
-                                        <div class="class-day">
-                                            <span class="color-font1">$48,845</span>
-                                            <p>Raised</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-        </div>
-        <!-- Services End -->
+
         <!-- About -->
         <div class="support-company-area section-padding">
             <div class="container">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-xl-6 col-lg-6 col-md-10">
                         <div class="support-location-img">
-                            <img src="{{ url_for('static', filename='img/gallery/about.jpg')}}" alt="">
+                            <img src="{{ url_for('static', filename='img/gallery/erirefugee.png')}}" alt="">
                         </div>
                     </div>
                     <div class="col-xl-5 col-lg-6 col-md-10">
                         <div class="right-caption">
-                            <!-- Section Tittle -->
+                            <!-- About Us -->
                             <div class="section-tittle">
                                 <h2>Who we are?</h2>
                             </div>
                             <div class="support-caption">
-                                <p class="mb-10">Sedac odio aliquet, fringilla odio eget, tincidunt nunc. Duis aliquet 
-                                    pulvinar ante tempor etiam lacus eros</p>
-                                <p class="pera-top">The legal definition of a charitable organization (and of charity) varies between countries and in some instances regions of the country. The regulation, the tax treatment, and the way in which charity law affects charitable organizations also vary.</p>
-                                <a href="about.html" class="btn about-btn">Learn More</a>
+                                <p class="mb-10">We are Hope Refugee Settlement Services International, a nonprofit organization that is committed to providing support to refugees and other vulnerable migrants with the process of settling in Canada, and life after settlement.</p>
+                                <p class="pera-top">Our goal is to preserve, strengthen, and promote individual well-being and family ties.</p>
+                                <a href="about" class="btn about-btn">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -356,7 +50,7 @@
         </div>
         <!-- About Area End-->
         <!-- Count Down Start -->
-        <div class="count-down-area pt-25 section-img-bg2" data-background="{{ url_for('static', filename= 'img/gallery/section-bg1.jpg')}}">
+        <div class="count-down-area pt-25 section-img-bg2" data-background="{{ url_for('static', filename= 'img/gallery/toronto.jpeg')}}">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-12 col-md-12">
@@ -368,7 +62,7 @@
                                             <img src="{{ url_for('static', filename= 'img/icon/count-icon1.svg')}}" alt="">
                                         </div>
                                         <div class="captions">
-                                            <span class="counter">35</span>
+                                            <span class="counter">25</span>
                                             <span class="plus">+</span>
                                             <p class="color-green">Active Cases</p>
                                         </div>
@@ -380,8 +74,8 @@
                                             <img src="{{ url_for('static', filename = 'img/icon/count-icon2.svg')}}" alt="">
                                         </div>
                                         <div class="captions">
-                                            <span class="counter">12</span>
-                                            <span class="plus">m</span>
+                                            <span class="counter">45</span>
+                                            <span class="plus">+</span>
                                             <p class="color-green">People Joined</p>
                                         </div>
                                     </div>
@@ -392,8 +86,8 @@
                                             <img src="{{ url_for('static', filename='img/icon/count-icon3.svg')}}" alt="">
                                         </div>
                                         <div class="captions">
-                                            <span class="counter">200</span>
-                                            <span class="plus">m</span>
+                                            <span class="counter">50</span>
+                                            <span class="plus">+</span>
                                             <p class="color-green">Cases every Year</p>
                                         </div>
                                     </div>
@@ -404,7 +98,7 @@
                                             <img src="{{ url_for('static', filename='img/icon/count-icon4.svg')}}" alt="">
                                         </div>
                                         <div class="captions">
-                                            <span class="counter">1200</span>
+                                            <span class="counter">82</span>
                                             <p class="color-green">People get help from us</p>
                                         </div>
                                     </div>
@@ -423,8 +117,8 @@
                     <div class="col-xl-7 col-lg-8 col-md-11">
                         <!-- Section Tittle -->
                         <div class="section-tittle text-center mb-70">
-                            <h2>We serve for peoples</h2>
-                            <p>Sedac odio aliquet, fringilla odio eget, tincidunt  nunc duis aliquet <br>pulvinar ante.</p>
+                            <h2>Services we Offer to Refugees</h2>
+                            <p>Here are some of the services that HRSSI Hope offers<br>Eritreans in Canada and Abroad.</p>
                         </div> 
                     </div>
                 </div>
@@ -432,33 +126,33 @@
                     <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6">
                         <div class="single-services text-center mb-30">
                             <div class="services-icon">
-                                <img src="{{ url_for('static', filename = 'img/icon/services1.svg')}}" alt="">
+                                <img src="{{ url_for('static', filename = 'img/icon/refugee1.png')}}" alt="">
                             </div>
                             <div class="services-cap">
-                                <h5><a href="#">Pure Food & Water</a></h5>
-                                <p>Odio aliquet, fringilla odio eget, tincidunt nunc duis aliquet pulvinar ante employees and organizations to support.</p>
+                                <h5><a href="about">Refugee Sponsorship</a></h5>
+                                <p>We protect refugees in Canada and overseas and alleviate barriers to family reunification and delays in processing of privately sponsored refugees.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6">
                         <div class="single-services text-center mb-30">
                             <div class="services-icon">
-                                <img src="{{ url_for('static', filename='img/icon/services2.svg')}}" alt="">
+                                <img src="{{ url_for('static', filename='img/icon/mace.png')}}" alt="">
                             </div>
                             <div class="services-cap">
-                                <h5><a href="#">Health & Medicine</a></h5>
-                                <p>Odio aliquet, fringilla odio eget, tincidunt nunc duis aliquet pulvinar ante employees and organizations to support.</p>
+                                <h5><a href="about">Legal Aid</a></h5>
+                                <p>We provide legal aid and support for refugees. This includes finding you a legal representative and translation services.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6">
                         <div class="single-services text-center mb-30">
                             <div class="services-icon">
-                                <img src="{{ url_for('static', filename='img/icon/services1.svg')}}" alt="">
+                                <img src="{{ url_for('static', filename='img/icon/jobsearch.png')}}" alt="">
                             </div>
                             <div class="services-cap">
-                                <h5><a href="#">Education</a></h5>
-                                <p>Odio aliquet, fringilla odio eget, tincidunt nunc duis aliquet pulvinar ante employees and organizations to support.</p>
+                                <h5><a href="about">Housing & Jobs</a></h5>
+                                <p>For newly landed and early stage refugees in Canada, we help them with finding appropriate housing and employment for their situations.</p>
                             </div>
                         </div>
                     </div>
@@ -473,10 +167,10 @@
                     <div class="col-xl-6 col-lg-8 col-md-9 col-sm-12">
                         <div class="single-emargency">
                             <div class="emargency-cap">
-                                <h5><a href="#">They need your help</a></h5>
-                                <p>Sedac odio aliquet, fringilla odio eget, tincidunt nunc. Duis aliquet pulvinar ante tempor etiam lacus eros</p>
-                                <p class="emargenc-cap">Sedac odio aliquet, fringilla odio eget, tincidunt nunc. Duis aliquet pulvinar ante tempor etiam lacus eros</p>
-                                <a href="#" class="btn loan-btn">Donate in a Case</a>
+                                <h5><a href="#">We need your help</a></h5>
+                                <p> HRSSI was founded by a group of Eritrean former refugees who understand the challenged faced by other refugees when going through the process of immigration to a foreign land.</p>
+                                <p class="emargenc-cap">We know the difficulties refugees face when first planning to immigrate and when they arrive. Help us provide them all the necessary assitance and information needed to ensure thier successful integration into Canada.</p>
+                                <a href="#" class="btn loan-btn">Donate Now</a>
                             </div>
                         </div>
                     </div>
@@ -491,10 +185,10 @@
                     <div class="col-xl-4 col-lg-5 col-md-10">
                         <div class="joing-details">
                             <div class="section-tittle">
-                                <h2>Join with Us</h2>
+                                <h2>Join Us</h2>
                             </div>
-                            <p>The legal definition of a charitable organization (and of charity) varies between countries and in some instances regions of the country. The regulation, the tax treatment, and the way.</p>
-                            <a href="about.html" class="btn about-btn">Join Now</a>
+                            <p> If you are looking to get involved by volunteering your time to help those in need, look no more! We welcome your support and efforts.</p>
+                            <a href="join" class="btn about-btn">Join Now</a>
                         </div>
                     </div>
                     <div class="offset-xl-1 col-xl-4 col-lg-4 col-md-7 col-sm-7">
@@ -504,7 +198,7 @@
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-5 col-sm-5">
                         <div class="joning-img">
-                            <img src="{{ url_for('static', filename='img/gallery/joining2.jpg')}}" alt="" class="w-100">
+                            <img src="{{ url_for('static', filename='img/gallery/eri_refugee2.png')}}" alt="" class="w-100">
                         </div>
                     </div>
                 </div>
@@ -512,139 +206,6 @@
         </div>
         <!-- Join with Us End-->
     </main>
-    <footer>
-        <div class="footer-wrapper">
-            <div class="footer-area footer-padding">
-                <div class="container">
-                    <div class="row justify-content-between">
-                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-8">
-                            <div class="single-footer-caption mb-50">
-                                <div class="single-footer-caption mb-20">
-                                    <!-- logo -->
-                                    <div class="footer-logo mb-35">
-                                        <a href="index.html"><img src="{{ url_for('static', filename='img/logo/logo2_footer.png')}}" alt=""></a>
-                                    </div>
-                                    <div class="footer-tittle">
-                                        <div class="footer-pera">
-                                            <p>Seddo eiusmod tempor incididunt ut labore et dolore magna aliqua. Conse ctetur pisicin elit, sed do eiusmod tempor.</p>
-                                        </div>
-                                    </div>
-                                    <!-- social -->
-                                    <div class="footer-social">
-                                        <a href="https://bit.ly/sai4ull"><i class="fab fa-facebook"></i></a>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                        <a href="#"><i class="fab fa-youtube"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="offset-xl-1 col-xl-2 col-lg-2 col-md-4 col-sm-6">
-                            <div class="single-footer-caption mb-50">
-                                <div class="footer-tittle">
-                                    <h4>Navigation</h4>
-                                    <ul>
-                                        <li><a href="#">Home</a></li>
-                                        <li><a href="#">About</a></li>
-                                        <li><a href="#">Services</a></li>
-                                        <li><a href="#">Blog</a></li>
-                                        <li><a href="#">Contact</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
-                            <div class="single-footer-caption mb-50">
-                                <div class="footer-tittle">
-                                    <h4>Services</h4>
-                                    <ul>
-                                        <li><a href="#">Pet Care</a></li>
-                                        <li><a href="#">Pet Treatment</a></li>
-                                        <li><a href="#">Pet Trainingl</a></li>
-                                        <li><a href="#">Hygienic Care</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
-                            <div class="single-footer-caption mb-50">
-                                <div class="footer-tittle mb-10">
-                                    <h4>Subscribe newsletter</h4>
-                                    <p>Subscribe our newsletter to get updates about our services and offers.</p>
-                                </div>
-                                <!-- Form -->
-                                <div class="footer-form mb-20">
-                                    <div id="mc_embed_signup">
-                                        <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-                                        method="get" class="subscribe_form relative mail_part">
-                                            <input type="email" name="email" id="newsletter-form-email" placeholder="Enter your email"
-                                            class="placeholder hide-on-focus">
-                                            <div class="form-icon">
-                                                <button type="submit" name="submit" id="newsletter-submit"
-                                                class="email_icon newsletter-submit button-contactForm">
-                                                <i class="fas fa-arrow-right"></i>
-                                            </button>
-                                            </div>
-                                            <div class="mt-10 info"></div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- footer-bottom area -->
-            <div class="footer-bottom-area">
-                <div class="container">
-                    <div class="footer-border">
-                        <div class="row">
-                            <div class="col-xl-12 ">
-                                <div class="footer-copy-right text-center">
-                                    <p>Copyright ©2020 All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i>  by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Scroll Up -->
-    <div id="back-top" >
-        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
-    </div>
 
-    <!-- JS here -->
-    <script src="{{ url_for('static', filename='js/vendor/modernizr-3.5.0.min.js')}}"></script>
-    <!-- Jquery, Popper, Bootstrap -->
-<!--    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>-->
-    <script src="{{ url_for('static', filename='js/vendor/jquery-1.12.4.min.js')}}"></script>
-    <script src="{{ url_for('static', filename= 'js/popper.min.js')}}"></script>
-    <script src="{{ url_for('static', filename= 'js/bootstrap.min.js')}}"></script>
-
-    <!-- Slick-slider , Owl-Carousel ,slick-nav -->
-    <script src="{{ url_for('static', filename= 'js/owl.carousel.min.js')}}"></script>
-    <script src="{{ url_for('static', filename= 'js/slick.min.js')}}"></script>
-    <script src="{{ url_for('static', filename = 'js/jquery.slicknav.min.js')}}"></script>
-
-    <!--wow , counter , waypoint, Nice-select -->
-    <script src="{{ url_for('static', filename='js/wow.min.js')}}"></script>
-    <script src="{{ url_for('static', filename='js/jquery.magnific-popup.js')}}"></script>
-    <script src="{{ url_for('static', filename= 'js/jquery.nice-select.min.js')}}"></script>
-    <script src="{{ url_for('static', filename = 'js/jquery.counterup.min.js')}}"></script>
-    <script src="{{ url_for('static', filename = 'js/waypoints.min.js')}}"></script>
-    <script src="{{ url_for('static', filename = 'js/barfiller.js')}}"></script>
-
-    <!-- contact js -->
-    <script src="{{ url_for('static', filename = 'js/contact.js')}}"></script>
-    <script src="{{ url_for('static', filename = 'js/jquery.form.js')}}"></script>
-    <script src="{{ url_for('static', filename = 'js/jquery.validate.min.js')}}"></script>
-    <script src="{{ url_for('static', filename = 'js/mail-script.js')}}"></script>
-    <script src="{{ url_for('static', filename = 'js/jquery.ajaxchimp.min.js')}}"></script>
-
-    <!--  Plugins, main-Jquery -->	
-    <script src="{{ url_for('static', filename = 'js/plugins.js')}}"></script>
-    <script src="{{ url_for('static', filename = 'js/main.js')}}"></script>
-    </body>
-</html>
+    {% endblock content %}
+    {% include "footer.html" %}
