@@ -111,7 +111,6 @@ mpmath
 msgpack
 multipledispatch
 mypy-extensions
-navigator-updater
 nbclassic
 nbclient
 nbconvert
