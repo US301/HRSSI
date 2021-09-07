@@ -180,7 +180,6 @@ regex
 requests
 rope
 Rtree
-ruamel-yaml-conda
 scikit-image
 scikit-learn
 scipy
