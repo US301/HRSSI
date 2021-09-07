@@ -1,18 +1,18 @@
 alabaster
-anaconda-navigator==2.0.4
-anaconda-project @ file:///tmp/build/80754af9/anaconda-project_1610472525955/work
+anaconda-navigator
+anaconda-project
 anyio
-appdirs==1.4.4
-applaunchservices==0.2.1
+appdirs
+applaunchservices
 appnope
 appscript
-argh==0.26.2
+argh
 argon2-cffi
 asn1crypto
 astroid
 astropy
 async-generator
-atomicwrites==1.4.0
+atomicwrites
 attrs
 autopep8
 Babel
