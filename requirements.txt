@@ -26,7 +26,6 @@ black==19.10b0
 bleach
 bokeh
 boto==2.49.0
-Bottleneck==1.3.2
 Brotli
 brotlipy==0.7.0
 certifi==2020.12.5
@@ -35,10 +34,6 @@ chardet
 click
 cloudpickle
 colorama
-conda-content-trust
-conda-package-handling
-conda-repo-cli
-conda-token
 cryptography
 Cython
 cytoolz
