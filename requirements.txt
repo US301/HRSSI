@@ -233,7 +233,6 @@ wrapt
 wurlitzer
 xlrd
 XlsxWriter
-xlwings
 xlwt
 xmltodict
 yapf
