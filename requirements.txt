@@ -238,5 +238,4 @@ xmltodict
 yapf
 zict
 zipp
-zope.event
-zope.interface
+
