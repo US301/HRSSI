@@ -25,7 +25,6 @@ pyobjc-framework-Automator==7.3
 pyobjc-framework-CalendarStore==7.3
 pyobjc-framework-CloudKit==7.3
 pyobjc-framework-Collaboration==7.3
-pyobjc-framework-WebKit==7.3
 pyOpenSSL
 PySocks
 python-dateutil
