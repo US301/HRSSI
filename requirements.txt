@@ -21,7 +21,6 @@ pycparser
 pyobjc-framework-Accounts==7.3
 pyobjc-framework-AppleScriptKit==7.3
 pyobjc-framework-AppleScriptObjC==7.3
-pyobjc-framework-ApplicationServices==7.3
 pyobjc-framework-Automator==7.3
 pyobjc-framework-AVFoundation==7.3
 pyobjc-framework-AVKit==7.3
