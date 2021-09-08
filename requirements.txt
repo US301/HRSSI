@@ -25,7 +25,6 @@ pyobjc-framework-Automator==7.3
 pyobjc-framework-CalendarStore==7.3
 pyobjc-framework-CloudKit==7.3
 pyobjc-framework-Collaboration==7.3
-pyobjc-framework-ContactsUI==7.3
 pyobjc-framework-CoreAudioKit==7.3
 pyobjc-framework-CoreData==7.3
 pyobjc-framework-CoreMedia==7.3
