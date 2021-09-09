@@ -1,7 +1,6 @@
 backports.entry-points-selectable==1.1.0
 beautifulsoup4
 blinker==1.4
-Bottleneck
 brotlipy==0.7.0
 certifi==2021.5.30
 cffi
