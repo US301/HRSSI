@@ -1,5 +1,4 @@
 blinker==1.4
-Bottleneck
 brotlipy==0.7.0
 certifi==2021.5.30
 cffi
@@ -17,9 +16,6 @@ itsdangerous
 Jinja2
 lxml
 MarkupSafe
-mkl-fft==1.3.0
-mkl-random
-mkl-service==2.4.0
 numexpr
 numpy
 pandas==1.3.1
