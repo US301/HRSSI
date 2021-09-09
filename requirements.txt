@@ -22,7 +22,6 @@ pandas==1.3.1
 platformdirs==2.3.0
 pycparser
 pyobjc==7.3
-pyobjc-core==7.3
 pyobjc-framework-Accounts==7.3
 pyobjc-framework-AddressBook==7.3
 pyobjc-framework-AppleScriptKit==7.3
@@ -34,7 +33,6 @@ pyobjc-framework-AVKit==7.3
 pyobjc-framework-CalendarStore==7.3
 pyobjc-framework-CFNetwork==7.3
 pyobjc-framework-CloudKit==7.3
-pyobjc-framework-Cocoa==7.3
 pyobjc-framework-Collaboration==7.3
 pyobjc-framework-Contacts==7.3
 pyobjc-framework-ContactsUI==7.3
@@ -91,7 +89,6 @@ pyobjc-framework-Photos==7.3
 pyobjc-framework-PhotosUI==7.3
 pyobjc-framework-PreferencePanes==7.3
 pyobjc-framework-PubSub==7.3
-pyobjc-framework-Quartz==7.3
 pyobjc-framework-SafariServices==7.3
 pyobjc-framework-SceneKit==7.3
 pyobjc-framework-ScreenSaver==7.3
